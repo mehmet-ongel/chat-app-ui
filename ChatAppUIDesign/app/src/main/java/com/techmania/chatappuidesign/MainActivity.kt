@@ -38,9 +38,6 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(mToolbar)
         supportActionBar!!.title = "Chat App UI"
 
-        val intent = Intent(this,SecondMainActivity::class.java)
-        startActivity(intent)
-
         val adapter = ChatViewPagerAdapter(supportFragmentManager,lifecycle)
 
         viewPager.adapter = adapter
